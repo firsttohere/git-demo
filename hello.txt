@@ -3,4 +3,21 @@ public class Test{
     //修改后的代码
     System.out.println("hello world");
   }
+
+  //从新修改代码
+  public int binarySearch(int[] arr,int target){
+    int left = 0;
+    int right = arr.length - 1;
+    int mid,result = -1;
+    while(left <= right){
+      mid = (left +right) / 2;
+      if(arr[mid] == target){
+        return mid;
+      }else if(arr[mid] > target){
+        right = mid;
+      }else{
+        left = mid;
+      }
+    }
+  }
 }
