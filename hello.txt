@@ -1,1 +1,6 @@
-1
+public class Test{
+  public static void main(String[] args){
+    //修改后的代码
+    System.out.println("hello world");
+  }
+}
